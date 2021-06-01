@@ -33,12 +33,7 @@
 ![](https://img-blog.csdn.net/201806151358060?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3p3YzE3MjU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 "广播报文类型")
 
 1. 可连接的非定向广播：Connectable Undirected Event Type（ADV_IND），这是一种用途最广的广播类型，包括广播数据和扫描响应数据，它表示当前设备可以接受其他任何设备的连接请求。
-<<<<<<< HEAD
-2. 
-=======
-<<<<<<< HEAD
-2. 
-=======
+
 
     这种广播类型用的最多，需要注意，在一个广播事件中，前一个“ADV_IND_PDUs”的开始到相邻下一个“ADV_IND_PDUs”的开始处，间隔时间要小于等于10ms。
 
@@ -115,5 +110,3 @@ Random Device Address：随机设备地址（私有设备地址），它也是48
 ## Advertising And ScanResponse Data（广播和扫描回应数据） ##
 广播数据和扫描回应数据，它们的长度都不能超过31字节(0~31)，数据的格式必须满足下图的要求，可以包含多个AD数据段，但是每个AD数据段必须由"Length: Data"组成，其中Length占用1个octet，Data部分占用Length个字节，所以一个AD段的长度为Length+1，如下图所示：
 ![](https://img-blog.csdn.net/20160416103047452)
->>>>>>> 07f902d... Add BLE Advertising and scan
->>>>>>> 470d696 (Add advertising and scan)
